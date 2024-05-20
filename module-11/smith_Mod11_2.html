@@ -1,0 +1,51 @@
+<!--Joseph Smith : Module 11.2 Assignment-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var items = [];
+
+        function addItem() {
+            var item = document.getElementById("itemInput").value;
+            if (item) {
+                items.push(item);
+                alert("Added: " + item + " at position " + items.length);
+            } else {
+                alert("Please enter an item.");
+            }
+        }
+
+        function deleteLastItem() {
+            if (items.length > 0) {
+                var deletedItem = items.pop();
+                alert("Deleted: " + deletedItem);
+            } else {
+                alert("No items to delete.");
+            }
+        }
+
+        function displayItems() {
+            var displayArea = document.getElementById("displayArea");
+            displayArea.innerHTML = "";
+            if (items.length > 0) {
+                items.forEach(function(item, index) {
+                    displayArea.innerHTML += (index + 1) + ". " + item + "<br />";
+                });
+            } else {
+                displayArea.innerHTML = "No items to display.";
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+<label for="itemInput"></label><input type="text" id="itemInput" placeholder="Enter item">
+<button type="button" onclick="addItem()">Add</button>
+<button type="button" onclick="deleteLastItem()">Delete Last Entry</button>
+<button type="button" onclick="displayItems()">Display</button>
+<div id="displayArea"></div>
+</body>
+</html>
