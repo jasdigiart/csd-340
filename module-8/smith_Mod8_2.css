@@ -1,0 +1,108 @@
+/* header element */
+header {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* h1 */
+h1 {
+    font-weight: 400;
+}
+
+/* navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333; /* Choose an appropriate color */
+    border-bottom: 15px solid steelblue; /* Choose an appropriate color */
+}
+
+/* navbar a */
+#navbar a {
+    float: left;
+    display: block;
+    color: white; /* Choose an appropriate color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd; /* Choose an appropriate color */
+    color: black; /* Choose an appropriate color */
+}
+
+/* container div */
+#container {
+    margin: 2% 5% 100px 5%;
+    padding: 10px;
+}
+
+/* card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #333; /* Choose an appropriate color */
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* #movies */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* #movies th */
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+/* #movies td */
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* footer element */
+footer {
+    background-color: steelblue; /* Same color as header */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer p {
+    color: white; /* Choose an appropriate color */
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white; /* Choose an appropriate color */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

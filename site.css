@@ -1,0 +1,35 @@
+html, container {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+  background-color: steelblue;
+  color: white;
+  border: 1px solid #D6A800;
+  padding: 10px;
+  font-family: 'Scada', sans-serif;
+}
+
+address {
+  text-align: center;
+}
+
+a {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: steelblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: lightsteelblue;
+}
+
+a:visited {
+  color: darkblue; 
+}
+
+
